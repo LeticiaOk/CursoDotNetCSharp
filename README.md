@@ -1,3 +1,11 @@
+<h1>
+    <a href="https://www.dio.me/">
+     <img align="center" width="40px" src="https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png"></a>
+    <span> Curso oeferecido pela DIO XP Inc. - Full Stack Developer</span>
+</h1>
+
+> ## 📕 O repositório tem como objetivo armazenar resumos e o conteúdo passado em aula sobre .NET que utliza a linguagem C# .
+
 # ⭐ Introduçaõ ao ambiente .NET e Projetos colaborativos
 
 ## 🚀 ``Introdução as IDEs e Configurações de Ambiente .NET:``
