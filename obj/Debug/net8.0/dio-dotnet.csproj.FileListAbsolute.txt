@@ -12,3 +12,4 @@ C:\Users\letic\OneDrive\Documentos\cursos\dio-dotnet\obj\Debug\net8.0\refint\dio
 C:\Users\letic\OneDrive\Documentos\cursos\dio-dotnet\obj\Debug\net8.0\dio-dotnet.pdb
 C:\Users\letic\OneDrive\Documentos\cursos\dio-dotnet\obj\Debug\net8.0\dio-dotnet.genruntimeconfig.cache
 C:\Users\letic\OneDrive\Documentos\cursos\dio-dotnet\obj\Debug\net8.0\ref\dio-dotnet.dll
+C:\Users\letic\OneDrive\Documentos\cursos\dio-dotnet\obj\Debug\net8.0\dio-dotnet.sourcelink.json

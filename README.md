@@ -417,3 +417,286 @@ switch (letra)
         break;
 }
 ~~~~
+
+## 🚀```Operadores Aritméticos em C#:``
+
+### 1️⃣ Operadores aritméticos e a classe Math
+
+#### 📍Criando nossa classe Claculadora:
+
+* Criando classe Calculadora:
+
+~~~~C#
+
+namespace dio_dotnet.Models
+{
+    public class Calculadora
+    {
+        public void Somar(int x, int y)
+        {
+            System.Console.WriteLine($"{x} + {y} = {x + y}");
+        }
+        public void Subtrair(int x, int y)
+        {
+            System.Console.WriteLine($"{x} - {y} = {x - y}");
+        }
+        public void Multiplicar(int x, int y)
+        {
+            System.Console.WriteLine($"{x} x {y} = {x * y}");
+        }
+        public void Dividir(int x, int y)
+        {
+            System.Console.WriteLine($"{x} / {y} = {x / y}");
+        }
+    }
+}
+~~~~
+
+* Criando instância:
+
+~~~~C#
+using dio_dotnet.Models;
+
+Calculadora calc = new Calculadora(); 
+
+calc.Somar(10, 30); // Passando valores para o método
+calc.Subtrair(10, 50);
+calc.Multiplicar(15, 45);
+calc.Dividir(2, 2);
+~~~~
+
+#### 📍Usando potência:
+
+* Utilizando o Math:
+
+~~~~C#
+namespace dio_dotnet.Models
+{
+    public class Calculadora
+    {   ...
+        public void Potencia(int x, int y)
+        {   
+            double pot = Math.Pow(x, y);
+            System.Console.WriteLine($"{x} ^ {y} = {pot}");
+        }
+    }
+}
+~~~~
+
+* Criando instância:
+~~~~C#
+using dio_dotnet.Models;
+
+Calculadora calc = new Calculadora();
+
+calc.Potencia(3, 3);
+~~~~
+
+#### 📍Funções Trigonométricas:
+
+* Calculando Seno, Coseno e Tangente:
+
+~~~~C#
+namespace dio_dotnet.Models
+{
+    public class Calculadora
+    {
+         public void Seno(double angulo)
+        {       
+            double radiano =  angulo * Math.PI / 180; // Calculando radiano primeiro, para calcularmos o Seno
+            double seno = Math.Sin(radiano); // Utilizando a classe Math para calcular o Seno e passando o radiano como parâmetro para o méetodo Sin
+            System.Console.WriteLine($"Seno de {angulo} = {Math.Round(seno, 4)}"); // Utilizando o método Round de Math para mostrar no máximo 4 casas decimais
+        }
+         public void Coseno(double angulo)
+        {       
+            double radiano =  angulo * Math.PI / 180;
+            double coseno = Math.Cos(radiano);
+            System.Console.WriteLine($"Coseno de {angulo} = {Math.Round(coseno, 4)}");
+        }
+         public void Tangente(double angulo)
+        {       
+            double radiano =  angulo * Math.PI / 180;
+            double tangente = Math.Tan(radiano);
+            System.Console.WriteLine($"Tangente de {angulo} = {Math.Round(tangente, 4)}");
+        }
+    }
+}
+~~~~
+
+* Criando instância:
+
+~~~~C#
+using dio_dotnet.Models;
+
+Calculadora calc = new Calculadora();
+calc.Seno(30); // Passando parâmetro
+calc.Coseno(30);
+calc.Tangente(30);
+~~~~
+
+#### 📍Calculando raiz quadrada:
+
+~~~~C#
+namespace dio_dotnet.Models
+{
+    public class Calculadora
+    {
+         public void RaizQuadrada(double x)
+        {       
+            double raiz = Math.Sqrt(x);
+            System.Console.WriteLine($"Raiz quadrada de {x} = {raiz}");
+        }
+    }
+}
+~~~~
+
+* Criando instância:
+
+~~~~C#
+using dio_dotnet.Models;
+
+Calculadora calc = new Calculadora();
+
+calc.RaizQuadrada(9);
+~~~~
+
+## 🚀 ``Conhecendo as estruturas de Repetição em C#:``
+
+### 1️⃣ Estruturas de repetição
+
+#### 📍Introdução ao FOR
+
+* Estrutura:
+
+~~~C#
+int numero = 5;
+
+for(int contador = 0; contador <= 10; contador++)
+// int contador = 0: Declaração da variável
+// Contador <= 10: Condição de parada
+// Contador ++: incremento
+{
+    System.Console.WriteLine($"{numero} x {contador}  =  {numero * contador}");
+}
+~~~~
+
+#### 📍 Introdução ao WHILE
+
+* Etrutura:
+
+~~~~C#
+using dio_dotnet.Models;
+
+int numero = 5;
+int contador = 0;
+
+while(contador <= 10)
+{
+    System.Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+    contador++;
+}
+~~~~
+
+#### 📍 Introdução ao WHILE
+
+* Etrutura:
+
+
+~~~~C#
+using dio_dotnet.Models;
+
+int soma = 0, numero = 0;
+
+do
+{
+    System.Console.WriteLine("Digite um número (0 para parar)");
+    numero = Convert.ToInt32(Console.ReadLine());
+
+    soma += numero;
+
+} while (numero != 0);
+
+System.Console.WriteLine($"Total da soma dos números digitados é {soma}");
+~~~~
+
+#### 📍 Construindo um menu interativo:
+
+~~~~C#
+using dio_dotnet.Models;
+
+string opcao;
+
+while (true)
+{   Console.Clear(); // Limpa o console a cada loop
+    System.Console.WriteLine("Digite a sua opção");
+    System.Console.WriteLine("1 - Cadastrar cliente");
+    System.Console.WriteLine("2 - Buscar cliente");
+    System.Console.WriteLine("3 - Buscar Apagar cliente");
+    System.Console.WriteLine("4 - Encerrar");
+
+    opcao = Console.ReadLine();
+
+    switch (opcao)
+    {
+        case "1":
+            System.Console.WriteLine("Cdastro do cliente");
+            break;
+        case "2":
+            System.Console.WriteLine("Buscar de cliente");
+            break;
+        case "3":
+            System.Console.WriteLine("Apagar cliente");
+            break;
+        case "4":
+            System.Console.WriteLine("Encerrar");
+            Environment.Exit(0); // Encerrar o programa
+            break;
+        default:
+            System.Console.WriteLine("Opção inválida");
+            break;
+    }
+}
+
+System.Console.WriteLine("O programa encerrou"); // Essa linha não será executada já que utilizados o "Environment.Exit(0);".
+~~~~
+
+#### 📍 Refatorando o menu:
+
+~~~~C#endregionusing dio_dotnet.Models;
+
+string opcao;
+bool exibirMenu = true;
+
+while (exibirMenu)
+{   Console.Clear();
+    System.Console.WriteLine("Digite a sua opção");
+    System.Console.WriteLine("1 - Cadastrar cliente");
+    System.Console.WriteLine("2 - Buscar cliente");
+    System.Console.WriteLine("3 - Buscar Apagar cliente");
+    System.Console.WriteLine("4 - Encerrar");
+
+    opcao = Console.ReadLine();
+
+    switch (opcao)
+    {
+        case "1":
+            System.Console.WriteLine("Cdastro do cliente");
+            break;
+        case "2":
+            System.Console.WriteLine("Buscar de cliente");
+            break;
+        case "3":
+            System.Console.WriteLine("Apagar cliente");
+            break;
+        case "4":
+            System.Console.WriteLine("Encerrar");
+            exibirMenu = false;
+            break;
+        default:
+            System.Console.WriteLine("Opção inválida");
+            break;
+    }
+}
+
+System.Console.WriteLine("O programa encerrou");
+~~~~
