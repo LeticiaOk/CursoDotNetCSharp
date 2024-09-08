@@ -261,7 +261,7 @@ Console.WriteLine(dataAtual.ToString("dd/MM/yyyy MM:mm"));
 
 > Console: 12/09/2024 09:06
 
-## ``🚀 Tipos de operadores em C#:``
+## 🚀 ``Tipos de operadores em C#:``
 
 ### 1️⃣ Operadores de atribuição
 
