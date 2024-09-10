@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "dio-dotnet/1.0.0": {
+        "dependencies": {
+          "dio-dotnet.Common": "1.0.0"
+        },
+        "runtime": {
+          "dio-dotnet.dll": {}
+        }
+      },
+      "dio-dotnet.Common/1.0.0": {
+        "runtime": {
+          "dio-dotnet.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "dio-dotnet/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "dio-dotnet.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dio-dotnet", "dio-dotnet\dio-dotnet.csproj", "{472056B7-2755-4C4A-BCCB-00526BE51ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dio-dotnet.Common", "dio-dotnet.Common\dio-dotnet.Common.csproj", "{AEF2507C-6738-4479-918A-1B56AC36E21E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{472056B7-2755-4C4A-BCCB-00526BE51ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472056B7-2755-4C4A-BCCB-00526BE51ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472056B7-2755-4C4A-BCCB-00526BE51ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472056B7-2755-4C4A-BCCB-00526BE51ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF2507C-6738-4479-918A-1B56AC36E21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF2507C-6738-4479-918A-1B56AC36E21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF2507C-6738-4479-918A-1B56AC36E21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF2507C-6738-4479-918A-1B56AC36E21E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

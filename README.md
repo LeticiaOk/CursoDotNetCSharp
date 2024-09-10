@@ -568,7 +568,7 @@ calc.RaizQuadrada(9);
 
 * Estrutura:
 
-~~~C#
+~~~~C#
 int numero = 5;
 
 for(int contador = 0; contador <= 10; contador++)
@@ -662,7 +662,9 @@ System.Console.WriteLine("O programa encerrou"); // Essa linha não será execut
 
 #### 📍 Refatorando o menu:
 
-~~~~C#endregionusing dio_dotnet.Models;
+~~~~C#
+
+endregionusing dio_dotnet.Models;
 
 string opcao;
 bool exibirMenu = true;
@@ -700,3 +702,235 @@ while (exibirMenu)
 
 System.Console.WriteLine("O programa encerrou");
 ~~~~
+
+## 🚀```Conhecendo a organização de um programada C#:``
+### 1️⃣ Estrutura de um programa E método principal
+#### 📍 Estrutura deum programa C#:
+
+* csproj: Contém informações referente a um projeto (build, debug, versão), cada projeto deverá ter um arquivo cdproj.
+
+* sln: Contém informações que carregam um agrupamento de projetos (melhora a organização dos projetos), .
+
+* Quando mais de um projeto utiliza a mesma classe, colocamos essa classe em um projeto Common que vai ser a referência para todos os projetos, assim todos os projetos podem consultar essa mesma classe. A sln vai servir para referenciar esses perojetos e como eles se relacionam entre si (fazem parte de uma solution)
+
+#### 📍Criando nosso novo projeto:
+
+* Instalar extensão vscode solution explorer.
+
+* Criar nova soulion (isso vai adicionar um arquivo sln).
+* Adicionar um projeto existente na solution, isso vai criar uma ligação no arquivo sln com o projeto.
+
+* Adicionar um novo projeto -> biblioteca de classes -> C# -> dio-dotnet.Common -> Enter (vai conter apenas as classes modelo). Isso também vai criar uma ligação do arquivo sln com o projeto. Dessa forma no arquivo sln teremos a referência do projeto principal e do Common.
+
+* Criar pasta dio-dotnet -> mover arquivos para dentro dela exceto o sln e o Common.
+
+* Se necessário apagar as pastas bin e project e reiniciar o VsCode.
+
+* Mover a pasta models para a pasta Common, já que é nesse projeto que vão ficar as classes.
+
+* Referenciar as classes dentro de Models e o program.cs para: ``namespace dio_dotnet.Common.Models`` e ``using dio_dotnet.Common.Models;``
+
+* Como adicionamos o arquivo.csproj dentro da pasta dio-dotnet teremos que referenciar este arquivo no sln: ``Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dio-dotnet", "dio-dotnet.csproj", "{472056B7-2755-4C4A-BCCB-00526BE51ADC}" EndProject`` para: ``Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dio-dotnet", "dio-dotnet\dio-dotnet.csproj", "{472056B7-2755-4C4A-BCCB-00526BE51ADC}" EndProject``.
+
+ * Criar referência nos arquivos.csproj no arquivo principal em solution.
+
+* Dessa maneira podeos utilizar uma classe peeertencente a outro projeto em projetos diferentes
+
+#### 📍Criando um projeto em NET5 e NET6:
+
+> [!WARNING]  
+> **Atenção:** Atualmente a versão 5 do .NET não é mais suportada.
+
+* Nas versões a partir da .NET 6 o método main fica escondido.
+
+* Pra criar um projeto com a versão 5 do dotnet, criamos um arquivo.NET5, entramos dentro dele e damos o seguinte comando no terminal: dotnet ``new console --framework net5.0``.
+
+* Criar uma pasta dio-dotnet.NET6, entramos dentro dele e damos o seguinte comando no terminal: dotnet ``new console --framework net6.0``.
+
+#### 📍 Comparano NET5 e NET6:
+
+* Na versão 5 temos uma estrutura diferente no program.
+
+## 🚀```Arrays e Listas em C#``
+### 1️⃣ Arrays e Listas
+#### 📍 Introdução Array:
+
+**Estrutura:**
+
+Declaração de um array com até 4 valores: ``int[] array = new int[4]``
+
+* ``int[]``: tipo
+* ``array``: nomedo array
+* ``new int[4]``: declaração
+
+Declaração de um array passando os valores diretamente: ``int[] array = new int[] {42, 75, 74, 61};``
+
+> Nesse caso podemos omitir o tamnho.
+
+Resgatando o valor na posição 0 de um array: ``int elemento = array[0];``
+
+Atribuindo o valor 42 no array na posição 0: ``array[0] = 42``
+
+#### 📍 Implementando um array de inteiros:
+
+~~~~C#
+using dio_dotnet.Common.Models;
+
+int[] arrayInteiros = new int[3]; // Declarando array com 3 posições
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+// arrayInteiros[3]= 1;
+
+// Exibindo valores do array
+for (int contador = 0; contador < arrayInteiros.Length; contador++)
+// Usando Length para capacidade máxima do array
+{
+    System.Console.WriteLine($"Posição Nº {contador} - {arrayInteiros[contador]}");
+    /*
+        Exibe:
+        Posição Nº 0 - 72
+        Posição Nº 1 - 64
+        Posição Nº 2 - 50
+    */
+}
+~~~~
+
+#### 📍 Percorrendo um array com FOREACH:
+
+~~~~C#
+// Percorrendo Array com FOREACH
+int contadorForeach = 0;
+foreach(int valor in arrayInteiros)
+// Para cada elemento no arrayInteiros joga-se o valor na variável 'valor'.
+{
+    System.Console.WriteLine($"Posição Nº {contadorForeach} - {valor}");
+    contadorForeach++;
+    /*
+        Exibe:
+        Posição Nº 0 - 72
+        Posição Nº 1 - 64
+        Posição Nº 2 - 50
+    */
+}
+~~~~
+
+#### 📍 Redimensionando um array:
+
+~~~~C#
+using dio_dotnet.Common.Models;
+
+int[] arrayInteiros = new int[4]; // Declarando array com 4 posições
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+arrayInteiros[3]= 1;
+
+// Aumentando o valor do array com o método Resize
+// O Resize cria um novo array com a cópia dos valores do array antigo
+Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+/*
+    ref arrayInteiros: referência do array
+    arrayInteiros.Length * 2: Nova capacidade máxima do array 
+*/
+~~~~
+
+#### 📍 Copiando um array para outro:
+
+~~~~C#
+using dio_dotnet.Common.Models;
+
+int[] arrayInteiros = new int[4]; // Declarando array com 3 posições
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+arrayInteiros[3]= 1;
+
+// Declarando array e seu tamanho máximo (8 elementos).
+int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
+
+// Copiano array Inteiros para arrayInteirosDobrado com todos os valores (4 elementos).
+Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.LongLength)
+~~~~
+
+#### 📍 trabalhando com listas:
+
+* Não precisamos declarar uma capacidade máxima
+
+~~~~C#
+using dio_dotnet.Common.Models;
+
+List<string> listaString = new List<string>();
+// ou: List<string> listaString = [];
+
+/*
+    List: classe
+    <string>: tipo
+*/
+
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+
+// Usando Count para retornar a capacidade máxima da lista
+for(int contador = 0; contador < listaString.Count; contador++)
+{
+    System.Console.WriteLine($"Posição Nº {contador} - {listaString[contador]}");
+
+    /*
+        Posição Nº 0 - SP
+        Posição Nº 1 - BA
+        Posição Nº 2 - MG
+    */
+}
+
+int contadorForeach = 0;
+foreach(string item in listaString)
+{
+    System.Console.WriteLine($"Posição Nº {contadorForeach} - {item}");
+    contadorForeach++;
+     /*
+        Posição Nº 0 - SP
+        Posição Nº 1 - BA
+        Posição Nº 2 - MG
+    */
+
+}
+~~~~
+
+* Nas listas ela tem a capacidade de se redimensionar
+
+~~~~C#
+using dio_dotnet.Common.Models;
+
+List<string> listaString = new List<string>();
+// ou: List<string> listaString = [];
+
+/*
+    List: classe
+    <string>: tipo
+*/
+
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+listaString.Add("RJ");
+
+// Exibindo o total de intens na lista e sua capacidade
+System.Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// Adicionando elementos na lista e aumentando a sua capacidade de 4 para 8 elementos
+listaString.Add("SC");
+
+System.Console.WriteLine($"Ites na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// Removendo elementos da lista, os outros elementos passam a ocupar o ligar do que foi removido. A capacidade continua sendo 8.
+listaString.Remove("MG");
+
+System.Console.WriteLine($"Ites na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+~~~~
+
+## 🚀```Construindo um Sistema para um Estacionamento com C#``

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/dio-dotnet.sln",
+                "${workspaceFolder}/dio-dotnet.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/dio-dotnet.sln",
+                "${workspaceFolder}/dio-dotnet.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/dio-dotnet.sln"
+                "${workspaceFolder}/dio-dotnet.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
