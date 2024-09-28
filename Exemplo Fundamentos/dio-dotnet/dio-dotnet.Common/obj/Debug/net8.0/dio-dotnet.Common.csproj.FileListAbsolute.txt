@@ -1,0 +1,12 @@
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\bin\Debug\net8.0\dio-dotnet.Common.deps.json
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\bin\Debug\net8.0\dio-dotnet.Common.dll
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\bin\Debug\net8.0\dio-dotnet.Common.pdb
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\obj\Debug\net8.0\dio-dotnet.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\obj\Debug\net8.0\dio-dotnet.Common.AssemblyInfoInputs.cache
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\obj\Debug\net8.0\dio-dotnet.Common.AssemblyInfo.cs
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\obj\Debug\net8.0\dio-dotnet.Common.csproj.CoreCompileInputs.cache
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\obj\Debug\net8.0\dio-dotnet.Common.sourcelink.json
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\obj\Debug\net8.0\dio-dotnet.Common.dll
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\obj\Debug\net8.0\refint\dio-dotnet.Common.dll
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\obj\Debug\net8.0\dio-dotnet.Common.pdb
+C:\Users\letic\OneDrive\Documentos\cursos\DioDotnet\dio-dotnet\dio-dotnet.Common\obj\Debug\net8.0\ref\dio-dotnet.Common.dll
