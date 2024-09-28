@@ -1,0 +1,17 @@
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\bin\Debug\net8.0\ExemploExplorando.exe
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\bin\Debug\net8.0\ExemploExplorando.deps.json
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\bin\Debug\net8.0\ExemploExplorando.runtimeconfig.json
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\bin\Debug\net8.0\ExemploExplorando.dll
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\bin\Debug\net8.0\ExemploExplorando.pdb
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ExemploExplorando.csproj.AssemblyReference.cache
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ExemploExplorando.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ExemploExplorando.AssemblyInfoInputs.cache
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ExemploExplorando.AssemblyInfo.cs
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ExemploExplorando.csproj.CoreCompileInputs.cache
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ExemploE.B7F01285.Up2Date
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ExemploExplorando.dll
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\refint\ExemploExplorando.dll
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ExemploExplorando.pdb
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ExemploExplorando.genruntimeconfig.cache
+C:\Users\letic\OneDrive\Documentos\cursos\DioDonet\ExemploExplorando\aula\obj\Debug\net8.0\ref\ExemploExplorando.dll
